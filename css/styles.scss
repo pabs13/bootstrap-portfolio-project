@@ -1,0 +1,11 @@
+$color-primary: #87A0AC;
+$color-secondary: #C9DAE2;
+$main-text-color: #707070;
+
+body {
+    color: $main-text-color;
+}
+
+.jumbotron {
+    background-color: $color-primary;
+}

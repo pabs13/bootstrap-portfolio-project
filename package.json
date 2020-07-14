@@ -2,8 +2,11 @@
   "name": "portfolio-project",
   "version": "1.0.0",
   "description": "Bootstrap portfolio project",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
