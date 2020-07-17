@@ -2,10 +2,13 @@
   "name": "portfolio-project",
   "version": "1.0.0",
   "description": "Bootstrap portfolio project",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "lite": "lite-server",
-    "start": "npm run lite",
+    "start": "npm run watch:all",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,10 +23,13 @@
   "homepage": "https://github.com/pabs13/bootstrap-portfolio-project#readme",
   "devDependencies": {
     "lite-server": "^2.3.0",
+    "node-sass": "^4.12.0",
     "prettier": "2.0.5"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"
   }

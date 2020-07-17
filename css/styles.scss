@@ -1,0 +1,14 @@
+$primary-color: #87A0AC;
+$secondary-color: #C9DAE2;
+$text-color: #707070;
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    color: white;
+    background-color: $primary-color;
+}
+
+.navbar {
+    background-color: $secondary-color;
+}
