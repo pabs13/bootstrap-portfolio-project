@@ -1,6 +1,7 @@
 $primary-color: #87A0AC;
 $secondary-color: #C9DAE2;
 $text-color: #707070;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
 
 .jumbotron {
     margin: 0;
@@ -11,4 +12,24 @@ $text-color: #707070;
 
 .navbar {
     background-color: $secondary-color;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.carousel-caption {
+    background-color: $color-black-transparent;
+}
+
+.carousel {
+    border: solid $secondary-color;
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
