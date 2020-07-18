@@ -22,3 +22,9 @@
   position: absolute;
   right: 0;
   bottom: 0; }
+
+.card-img-top {
+  height: 350px; }
+
+.sub-header {
+  padding-top: 20px; }
