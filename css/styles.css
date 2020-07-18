@@ -28,3 +28,7 @@
 
 .sub-header {
   padding-top: 20px; }
+
+#reserveModal .modal-header {
+  background-color: #87A0AC;
+  color: white; }

@@ -41,3 +41,10 @@ $color-black-transparent: rgba(0, 0, 0, 0.5);
 .sub-header {
     padding-top: 20px;
 }
+
+#reserveModal {
+    .modal-header {
+        background-color: $primary-color;
+        color: white;
+    }
+}

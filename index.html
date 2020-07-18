@@ -33,7 +33,7 @@
             <div class="collapse navbar-collapse" id="viriNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-info fa-lg"></i> About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
             </div>
@@ -56,7 +56,7 @@
                     <div class="card-body">
                     <h5 class="card-title">Kids Haircut $20</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Book Appointment</a>
+                    <a href="#" class="btn btn-primary" id="reserveButton">Book Appointment</a>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                     <div class="card-body">
                     <h5 class="card-title">Adult Haircut $25</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Book Appointment</a>
+                    <a href="#" class="btn btn-primary" id="reserveButton">Book Appointment</a>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,60 @@
                     <div class="card-body">
                     <h5 class="card-title">Haircut and Shave $35</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Book Appointment</a>
+                    <a href="#" class="btn btn-primary" id="reserveButton">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="reserveModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title text-white">Book Appointment</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form id="reserveForm">
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label" for="numCampers">Name</label>
+                                    <div class="col">
+                                        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label" for="date">Date</label>
+                                    <div class="col">
+                                        <input type="date" id="date" name="date" placeholder="mm/dd/yyyy" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label" for="date">Time</label>
+                                    <div class="col">
+                                        <input type="time" id="appt" name="appt" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Haircut Type</label>
+                                    <div class="col btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-success active">
+                                            <input type="radio" name="haircutType" id="haircutKid" autocomplete="off" checked> Kid
+                                        </label>
+                                        <label class="btn btn-primary">
+                                            <input type="radio" name="haircutType" id="haircutAdult" autocomplete="off"> Adult
+                                        </label>
+                                        <label class="btn btn-info">
+                                            <input type="radio" name="haircutType" id="siteBeard" autocomplete="off"> Beard
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Search</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
